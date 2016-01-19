@@ -42,7 +42,6 @@ public class Solution
             if (family.isEmpty()) break;
             familyList.add(family);
         }
-
         //read home number
         String enterCity = reader.readLine();
 

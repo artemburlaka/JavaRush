@@ -21,6 +21,7 @@ public class Solution
 
     public static boolean isDateOdd(String date)
     {
+
         Date yearStartTime = new Date();
         Date enterTime = new Date(date);
 
