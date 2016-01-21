@@ -10,25 +10,33 @@ import java.rmi.RemoteException;
 */
 
 public class Solution {
-    public static void main(String[] args) {
-        processExceptions(new Solution());
+    public static void main(String[] args)
+    {
+
+
+            processExceptions(new Solution());
+
 
     }
 
-    public static void processExceptions(Solution obj) throws NoSuchFieldException, RemoteException
+    public static void processExceptions(Solution obj)
     {
-        try {
+        try
+        {
             obj.method1();
+            obj.method2();
+            obj.method3();
+
         }
         catch (IOException e)
         {
-            e.printStackTrace();
+            System.out.println(e.toString());
         }
-        obj.method2();
-            catch (NoSuchFieldException e) {
-            e.printStackTrace();
+        catch (NoSuchFieldException e)
+        {
+            System.out.println(e.toString());
         }
-        obj.method3();
+
     }
 
     public void method1() throws IOException {
